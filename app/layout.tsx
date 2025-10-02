@@ -7,7 +7,9 @@ import './global.css';
 
 export const metadata: Metadata = {
   title: 'Remondikohvik',
-  description: 'Deploy your static Next.js site to GitHub Pages.',
+  appleWebApp: {
+    title: 'Remondikohvik',
+  },
 };
 
 const lato = Lato({
