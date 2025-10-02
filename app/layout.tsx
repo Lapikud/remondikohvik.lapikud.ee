@@ -8,8 +8,10 @@ import './global.css';
 export const metadata: Metadata = {
   title: 'Remondikohvik',
   appleWebApp: {
+    startupImage: '/apple-icon.png',
     title: 'Remondikohvik',
   },
+  manifest: '/manifest',
 };
 
 const lato = Lato({
