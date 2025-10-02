@@ -1,9 +1,30 @@
+/** @format */
+
+import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
+import { Lato, Syncopate } from 'next/font/google';
+import './global.css';
 
 export const metadata: Metadata = {
-  title: 'Next.js on GitHub Pages',
-  description: 'Deploy your static Next.js site to GitHub Pages.',
+  title: 'Remondikohvik',
+  appleWebApp: {
+    startupImage: '/apple-icon.png',
+    title: 'Remondikohvik',
+  },
+  manifest: '/manifest',
 };
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
+  variable: '--font-lato',
+});
+
+const syncopate = Syncopate({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-syncopate',
+});
 
 export default function RootLayout({
   children,
@@ -12,7 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={cn('antialiased', `${lato.variable} ${syncopate.variable}`)}>
+        {children}
+      </body>
     </html>
   );
 }

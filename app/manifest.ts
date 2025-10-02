@@ -1,0 +1,34 @@
+/** @format */
+
+import type { MetadataRoute } from 'next/types';
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Remondikohvik',
+    short_name: 'Remondikohvik',
+    description: '',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#F2ECE7',
+    theme_color: '#DE8501',
+    icons: [
+      {
+        src: '/favicon.ico',
+        sizes: 'any',
+        type: 'image/x-icon',
+      },
+      {
+        src: '/web-app-manifest-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
+        src: '/web-app-manifest-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+    ],
+  };
+}
