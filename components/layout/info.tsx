@@ -12,7 +12,7 @@ export const InfoSection = () => (
       <Dec />
     </div>
 
-    <div className="w-3/5 border mr-10 relative flex flex-col not-lg:hidden">
+    <div className="w-3/5 mr-10 relative flex flex-col not-lg:hidden">
       <Image
         src={"assets/info-1.png"}
         alt="last year event pic"
