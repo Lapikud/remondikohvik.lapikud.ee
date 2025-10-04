@@ -20,7 +20,7 @@ const orgs = {
 };
 
 export const Hero = () => (
-  <div className="w-full h-screen flex relative items-center justify-start">
+  <section className="w-full h-screen flex relative items-center justify-start">
     <div className="w-full h-full absolute top-0 left-0 overflow-hidden z-1">
       <div className="hidden xl:block w-2/5 h-screen absolute right-0">
         <Dec direction="inverse" />
@@ -114,5 +114,5 @@ export const Hero = () => (
         ))}
       </div>
     </div>
-  </div>
+  </section>
 );
