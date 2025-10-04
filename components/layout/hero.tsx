@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 const orgs = {
   // org-name: [link, src, color]
-  'Lapikud': ['https://lapikud.ee', '/assets/lapikud-logo.svg', '--primary'],
-  'Tallinna Tööstushariduskeskus': ['https://tthk.ee', '/assets/TTHK-logo.png', '--background'],
-  'Tallinna Technikaülikool Robotiklubi': ['https://robotiklubi.ee', '/assets/Robotiklubi-logo.png', ''],
+  'Lapikud': ['https://lapikud.ee', 'assets/lapikud-logo.svg', '--primary'],
+  'Tallinna Tööstushariduskeskus': ['https://tthk.ee', 'assets/TTHK-logo.png', '--background'],
+  'Tallinna Technikaülikool Robotiklubi': ['https://robotiklubi.ee', 'assets/Robotiklubi-logo.png', ''],
 };
 
 export const Hero = () => (
@@ -20,7 +20,7 @@ export const Hero = () => (
       <div className="w-full h-full relative">
         <div className="z-2 w-full absolute top-0 left-0 h-full bg-secondary/67 backdrop-blur-[2px]" />
         <Image
-          src="/assets/hero.png"
+          src="assets/hero.png"
           alt="hero"
           fill={true}
           className="w-full h-full z-1 object-cover bg-center scale-105 bg-fixed"
@@ -29,12 +29,12 @@ export const Hero = () => (
     </div>
 
     {/* Main content */}
-    <div className="w-full h-full z-4 flex  justify-center flex-col gap-4 lg:gap-8 relative  text-secondary-foreground">
+    <div className="w-full h-full z-4 flex justify-center flex-col gap-4 lg:gap-8 relative  text-secondary-foreground">
       {/* Main section */}
       <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-4">
         <Image
-          src="/assets/remondikohvik-logo.png"
+          src="assets/remondikohvik-logo.png"
           alt="Remondikohvik logo"
           width={160}
           height={80}
