@@ -29,7 +29,7 @@ export const Hero = () => (
     </div>
 
     {/* Main content */}
-    <div className="w-full h-full z-4 flex justify-center flex-col gap-4 lg:gap-8 relative  text-secondary-foreground">
+    <div className="w-full h-full z-10 flex justify-center flex-col gap-4 lg:gap-8 relative  text-secondary-foreground">
       {/* Main section */}
       <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-4">
@@ -56,7 +56,7 @@ export const Hero = () => (
           </div>
           <div className="flex items-center gap-1 lg:gap-2.5 ">
             <MapPin className="not-sm:size-3 -translate-y-0.25" />
-            <a href="https://maps.app.goo.gl/B77ZdAA7KW3k3mze6" target="_blank" rel="noopener noreferrer" className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl">
+            <a href="https://maps.app.goo.gl/B77ZdAA7KW3k3mze6" target="_blank" rel="noopener noreferrer" className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl relative z-20">
               Taltech peamaja kohvik
             </a>
           </div>
@@ -78,7 +78,7 @@ export const Hero = () => (
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full flex items-center justify-center"
+                className="w-full h-full flex items-center justify-center relative z-20"
               >
                 <Image
                   src={src}
