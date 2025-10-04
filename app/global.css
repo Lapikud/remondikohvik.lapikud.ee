@@ -59,28 +59,30 @@
 
 .bubbles {
   position: relative;
+  display: block;
+  scale:0.85
 }
 
 .bubbles.bubbles-bl::before {
   content: "";
   box-shadow: -2.5rem -3rem 0 -0.625rem var(--primary), -3.5rem -6rem 0 -0.95rem var(--primary);
-  @apply rounded-full bg-primary aspect-square absolute left-0 bottom-0 w-10;
+  @apply rounded-full bg-primary aspect-square absolute left-0 bottom-0 w-[14.25%] max-w-10 sm:max-w-15 block;
 }
 
 .bubbles.bubbles-br::before {
   content: "";
   box-shadow: 2.5rem -3rem 0 -0.625rem var(--primary), 3.5rem -6rem 0 -0.95rem var(--primary);
-  @apply rounded-full bg-primary aspect-square absolute right-0 bottom-0 w-10;
+  @apply rounded-full bg-primary aspect-square absolute right-0 bottom-0 w-[14.25%] max-w-10 sm:max-w-15 block;
 }
 
 .bubbles.bubbles-tl::before {
   content: "";
   box-shadow: -2.5rem 3rem 0 -0.625rem var(--primary), -3.5rem 6rem 0 -0.95rem var(--primary);
-  @apply rounded-full bg-primary aspect-square absolute left-0 top-0 w-10;
+  @apply rounded-full bg-primary aspect-square absolute left-0 top-0 w-[14.25%] max-w-10 sm:max-w-15 block;
 }
 
 .bubbles.bubbles-tr::before {
   content: "";
   box-shadow: 2.5rem 3rem 0 -0.625rem var(--primary), 3.5rem 6rem 0 -0.95rem var(--primary);
-  @apply rounded-full bg-primary aspect-square absolute right-0 top-0 w-10;
+  @apply rounded-full bg-primary aspect-square absolute right-0 top-0 w-[14.25%] max-w-10 sm:max-w-15 block;
 }
