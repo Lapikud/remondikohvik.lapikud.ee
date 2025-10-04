@@ -83,8 +83,7 @@ export const Hero = () => (
                 <Image
                   src={src}
                   alt={org}
-                  // let the anchor control layout; Image should not use w-full/h/full which can escape
-                  // larger intrinsic size and responsive max-widths so logos appear bigger
+                  // Let the anchor control layout; avoid w-full/h-full on Image to prevent oversized logos that exceed responsive breakpoints
                   width={240}
                   height={120}
                   className="max-w-full max-h-full object-contain sm:max-w-[220px] lg:max-w-[320px]"
