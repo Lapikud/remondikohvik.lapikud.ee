@@ -38,11 +38,17 @@ export const InfoSection = () => (
           height={400}
           className="w-full object-contain lg:hidden"
         />
-        <ContentBox title="Kus?" icon={<MapPin className="inline mr-2" />}>
+        <ContentBox
+          title="Kus?"
+          icon={<MapPin className="inline mr-2 stroke-3 lg:size-12" />}
+        >
           <span>Taltech Peamaja Kohvik</span>
           <span>Akadeemia tee 5, Tallinn</span>
         </ContentBox>
-        <ContentBox title="Millal?" icon={<Calendar className="inline mr-2" />}>
+        <ContentBox
+          title="Millal?"
+          icon={<Calendar className="inline mr-2 stroke-3 lg:size-12" />}
+        >
           <span>8. November, 2025</span>
           <span>11:00 - 15:00</span>
         </ContentBox>
