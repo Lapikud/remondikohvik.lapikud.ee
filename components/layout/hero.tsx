@@ -56,7 +56,7 @@ export const Hero = () => (
           </div>
           <div className="flex items-center gap-1 lg:gap-2.5 ">
             <MapPin className="not-sm:size-3 -translate-y-0.25" />
-            <a href='https://maps.app.goo.gl/B77ZdAA7KW3k3mze6' target='_blank' rel="noopener noreferrer" className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl">
+            <a href="https://maps.app.goo.gl/B77ZdAA7KW3k3mze6" target="_blank" rel="noopener noreferrer" className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl">
               Taltech peamaja kohvik
             </a>
           </div>
