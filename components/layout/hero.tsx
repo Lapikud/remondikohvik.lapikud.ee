@@ -56,13 +56,13 @@ export const Hero = () => (
       {/* Orgs */}
       <div
         className={cn(
-          ' flex not-lg:flex-col lg:gap-5 h-20 not-lg:bottom-0 not-lg:absolute w-full',
+          ' flex not-lg:flex-col lg:gap-5 lg:h-20 not-lg:bottom-0  not-lg:absolute w-full',
           'lg:px-20 lg:container'
         )}>
         {Object.entries(orgs).map(([org, [src, color]]) => (
           <div
             key={org}
-            className="lg:rounded-4xl px-8 py-5 lg:py-3 w-full h-full lg:bg-transparent lg:max-w-fit not-lg:bg-black"
+            className="lg:rounded-4xl px-8 py-5 lg:py-3 w-full h-20 lg:bg-transparent lg:max-w-fit not-lg:bg-black"
             style={color ? { backgroundColor: `var(${color})` } : undefined}>
             <img
               src={src}
