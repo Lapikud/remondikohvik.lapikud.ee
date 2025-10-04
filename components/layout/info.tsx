@@ -9,7 +9,8 @@ import Image from "next/image";
 export const InfoSection = () => (
   <section className="w-full max-h-fit flex relative bg-secondary">
     <div className="w-1/5 h-full absolute not-lg:hidden">
-      <Dec />
+      {/* I cant decide if i want the lg or sm. the design says lg but im iffy */}
+      <Dec size="sm" />
     </div>
 
     <div className="w-3/5 mr-10 relative flex flex-col not-lg:hidden">
