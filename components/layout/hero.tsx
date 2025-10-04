@@ -13,18 +13,18 @@ const orgs = {
 
 export const Hero = () => (
   <div className="w-full h-screen flex relative items-center justify-start">
-    <div className="w-full h-full absolute top-0 left-0 overflow-hidden">
-      <div className="hidden lg:block w-2/5 h-screen absolute right-0">
+    <div className="w-full h-full absolute top-0 left-0 overflow-hidden z-1">
+      <div className="hidden xl:block w-2/5 h-screen absolute right-0">
         <Dec direction="inverse" />
       </div>
       <div className="w-full h-full relative">
         <div className="z-2 w-full absolute top-0 left-0 h-full bg-secondary/67 backdrop-blur-[2px]" />
-        <Image
-          src="assets/hero.png"
-          alt="hero"
-          fill={true}
-          className="w-full h-full z-1 object-cover bg-center scale-105 bg-fixed"
-        />
+          <Image
+            src="assets/hero.png"
+            alt="hero"
+            fill={true}
+            className="w-full h-full z-0 object-cover bg-center scale-105 bg-fixed"
+          />
       </div>
     </div>
 
