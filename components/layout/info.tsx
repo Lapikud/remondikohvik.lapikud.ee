@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const InfoSection = () => (
   <section className="w-full max-h-fit flex relative bg-secondary">
-    <div className="w-1/5 h-full absolute not-lg:hidden">
+    <div className="w-1/5 h-full absolute not-xl:hidden">
       {/* I cant decide if i want the lg or sm. the design says lg but im iffy */}
       <Dec size="sm" />
     </div>
@@ -30,7 +30,7 @@ export const InfoSection = () => (
       />
     </div>
 
-    <div className="w-full flex lg:items-center not-lg: container not-lg:mx-auto not-lg:px-8 not-lg:py-24">
+    <div className="w-full flex lg:items-center not-lg:container  not-lg:mx-auto not-lg:px-8 not-lg:py-24">
       <div className="w-full h-fit flex flex-col gap-16 ">
         <Image
           src={"assets/info-1.png"}
