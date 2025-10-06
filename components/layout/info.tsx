@@ -5,6 +5,7 @@ import { Dec } from "../Dec";
 import { ContentBox } from "../content";
 import Link from "next/link";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export const InfoSection = () => (
   <section id="info" className="w-full max-h-fit flex relative bg-secondary">
@@ -13,7 +14,13 @@ export const InfoSection = () => (
       <Dec size="sm" />
     </div>
 
-    <div className="xl:w-3/5 lg:w-4/7 lg:self-center lg:px-10 lg:*:rounded-lg lg:gap-y-10 lg:mr-10 xl:mr-20 relative flex flex-col not-lg:hidden">
+    <div
+      className={cn(
+        "relative flex flex-col not-lg:hidden",
+        "lg:w-4/7 lg:self-center lg:px-10 lg:mr-10 lg:*:rounded-lg lg:gap-y-10",
+        "xl:w-3/5 xl:self-auto xl:px-0 xl:mr-20 xl:*:rounded-none xl:gap-y-0"
+      )}
+    >
       <Image
         src={"assets/info-1.png"}
         alt="last year event pic"
