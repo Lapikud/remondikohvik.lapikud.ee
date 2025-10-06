@@ -18,11 +18,11 @@ export const Logo: FC<
     />
     <span
       className={cn(
-        "text-sm lg:text-lg font-medium uppercase leading-relaxed z-51",
+        "text-sm lg:text-lg font-light tracking-wider uppercase z-51 font-parkinsans -translate-y-0.5",
         textClassName
       )}
     >
-      Remondi<span className="text-primary">kohvik</span>
+      Remondi<span className="text-primary tracking-wider font-light font-parkinsans">kohvik</span>
     </span>
   </div>
 );
