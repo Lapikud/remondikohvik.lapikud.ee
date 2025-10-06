@@ -13,7 +13,7 @@ export const InfoSection = () => (
       <Dec size="sm" />
     </div>
 
-    <div className="w-3/5 mr-10 relative flex flex-col not-lg:hidden">
+    <div className="xl:w-3/5 lg:w-4/7 lg:self-center lg:px-10 lg:*:rounded-lg lg:gap-y-10 lg:mr-10 xl:mr-20 relative flex flex-col not-lg:hidden">
       <Image
         src={"assets/info-1.png"}
         alt="last year event pic"
@@ -30,7 +30,7 @@ export const InfoSection = () => (
       />
     </div>
 
-    <div className="w-full flex lg:items-center not-lg:container  not-lg:mx-auto not-lg:px-8 not-lg:py-24">
+    <div className="w-full flex lg:items-center not-lg:container lg:py-20 not-lg:mx-auto not-lg:px-8 not-lg:py-24">
       <div className="w-full h-fit flex flex-col gap-16 ">
         <Image
           src={"assets/info-1.png"}
