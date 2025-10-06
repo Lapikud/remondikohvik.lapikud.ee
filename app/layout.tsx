@@ -26,11 +26,11 @@ const syncopate = Syncopate({
   variable: "--font-syncopate",
 });
 
-const parkinsans = Parkinsans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-parkinsans",
-});
+// const parkinsans = Parkinsans({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700", "800"],
+//   variable: "--font-parkinsans",
+// });
 
 export default function RootLayout({
   children,
@@ -42,7 +42,7 @@ export default function RootLayout({
       <body
         className={cn(
           "antialiased scroll-smooth",
-          `${lato.variable} ${syncopate.variable} ${parkinsans.variable}`,
+          `${lato.variable} ${syncopate.variable}`,
         )}
       >
         {children}
