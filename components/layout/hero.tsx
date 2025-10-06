@@ -3,6 +3,7 @@ import { Calendar, MapPin } from "lucide-react";
 import { Dec } from "@/components/Dec";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Logo } from "../logo";
 
 const orgs = {
   // org-name: [link, src, color]
@@ -20,9 +21,9 @@ const orgs = {
 };
 
 export const Hero = () => (
-  <section className="w-full h-screen flex relative items-center justify-start">
+  <section className="w-full h-fit min-h-96 flex relative items-center justify-start md:pt-20">
     <div className="w-full h-full absolute top-0 left-0 overflow-hidden z-1">
-      <div className="hidden xl:block w-2/5 h-screen absolute right-0">
+      <div className="hidden xl:block w-2/5 h-full min-h-screen absolute right-0">
         <Dec direction="inverse" />
       </div>
       <div className="w-full h-full relative">
@@ -37,16 +38,14 @@ export const Hero = () => (
     </div>
 
     {/* Main content */}
-    <div className="w-full h-full z-10 flex justify-center flex-col gap-4 lg:gap-8 relative  text-secondary-foreground">
+    <div className="w-full h-full z-10 flex justify-center flex-col gap-4 lg:gap-8 relative text-secondary-foreground min-h-screen">
       {/* Main section */}
-      <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-4">
-          <Image
-            src="assets/remondikohvik-logo.png"
-            alt="Remondikohvik logo"
-            width={160}
-            height={80}
-            className="-translate-y-2"
+      <div className="flex flex-col not-lg:min-h-96 gap-4 lg:gap-8 px-8 lg:px-20 container">
+        <div className="flex flex-col sm:gap-4">
+          <Logo
+            className="lg:hidden"
+            imgClassName="md:hidden"
+            textClassName="md:text-2xl"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
             Tegid Katki?
