@@ -2,7 +2,10 @@ import { ContentBox } from "../content";
 import { ImageFrame } from "../imageFrame";
 
 export const HistorySection = () => (
-  <section className="w-full max-h-fit flex flex-col lg:flex-row items-start justify-center gap-16 lg:gap-32 py-24 bg-background container mx-auto px-8 not-lg:flex-col-reverse">
+  <section
+    id="ajalugu"
+    className="w-full max-h-fit flex flex-col lg:flex-row items-start justify-center gap-16 lg:gap-32 py-24 bg-background container mx-auto px-8 not-lg:flex-col-reverse"
+  >
     <ImageFrame
       width={400}
       height={300}

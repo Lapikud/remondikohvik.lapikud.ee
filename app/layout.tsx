@@ -34,7 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("antialiased", `${lato.variable} ${syncopate.variable}`)}
+        className={cn(
+          "antialiased scroll-smooth",
+          `${lato.variable} ${syncopate.variable}`
+        )}
       >
         {children}
       </body>

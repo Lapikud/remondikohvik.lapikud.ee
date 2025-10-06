@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const InfoSection = () => (
-  <section className="w-full max-h-fit flex relative bg-secondary">
+  <section id="info" className="w-full max-h-fit flex relative bg-secondary">
     <div className="w-1/5 h-full absolute not-xl:hidden">
       {/* I cant decide if i want the lg or sm. the design says lg but im iffy */}
       <Dec size="sm" />

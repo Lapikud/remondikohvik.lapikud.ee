@@ -51,7 +51,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50 font-lato;
+    @apply border-border outline-ring/50 font-lato scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;
