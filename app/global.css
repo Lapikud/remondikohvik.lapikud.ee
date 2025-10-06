@@ -6,6 +6,7 @@
 @theme {
   --font-lato: var(--font-lato), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-syncopate: var(--font-syncopate), ui-monospace, "Consolas", "Liberation Mono", "Courier New", "Courier", monospace;
+  --font-parkinsans: var(--font-parkinsans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 

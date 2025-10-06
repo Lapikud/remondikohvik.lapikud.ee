@@ -18,17 +18,10 @@ const orgs = {
     "assets/Robotiklubi-logo.png",
     "--robot-club-color",
   ],
-  "Kspace": [
-    "https://k-space.ee",
-    "assets/kspace-logo1.svg",
-    "--alpha-0",
-    "hidden lg:block"
-  ],
   "Kspace2": [
     "https://k-space.ee",
     "assets/kspace-logo2.svg",
     "--kspace-color",
-    "hidden not-lg:block"
   ],
 };
 
@@ -55,9 +48,9 @@ export const Hero = () => (
       <div className="flex flex-col not-lg:min-h-96 gap-4 lg:gap-8 px-8 lg:px-20 container">
         <div className="flex flex-col sm:gap-4">
           <Logo
-            className="lg:hidden"
-            imgClassName="md:hidden"
-            textClassName="md:text-2xl"
+            className="lg:hidden flex items-center"
+            imgClassName="sm:hidden size-16"
+            textClassName="text-2xl sm:hidden"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
             Tegid Katki?
