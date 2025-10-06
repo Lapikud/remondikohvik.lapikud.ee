@@ -16,7 +16,19 @@ const orgs = {
   "Tallinna Technikaülikool Robotiklubi": [
     "https://robotiklubi.ee",
     "assets/Robotiklubi-logo.png",
-    "",
+    "--robot-club-color",
+  ],
+  "Kspace": [
+    "https://k-space.ee",
+    "assets/kspace-logo1.svg",
+    "--alpha-0",
+    "hidden lg:block"
+  ],
+  "Kspace2": [
+    "https://k-space.ee",
+    "assets/kspace-logo2.svg",
+    "--kspace-color",
+    "hidden not-lg:block"
   ],
 };
 
@@ -84,13 +96,14 @@ export const Hero = () => (
           "h-auto *:h-16",
           // this is also an option...but like we experimenting and shit
           // ' flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full gap-x-5 *:rounded-2xl',
+          "flex-wrap lg:justify-start lg:gap-4",
           "lg:px-20 lg:container"
         )}
       >
-        {Object.entries(orgs).map(([org, [link, src, color]]) => (
+        {Object.entries(orgs).map(([org, [link, src, color, display]]) => (
           <div
             key={org}
-            className="px-8 py-2 lg:py-2 w-full h-full lg:max-w-fit bg-black flex items-center justify-center"
+            className={cn(`px-8 py-2 lg:py-2 w-full h-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`)}
             style={color ? { backgroundColor: `var(${color})` } : undefined}
           >
             <a
@@ -105,7 +118,7 @@ export const Hero = () => (
                 // Let the anchor control layout; avoid w-full/h-full on Image to prevent oversized logos that exceed responsive breakpoints
                 width={240}
                 height={120}
-                className="max-w-full max-h-full object-contain sm:max-w-[220px] lg:max-w-[320px]"
+                className={cn(`max-w-full max-h-full object-contain ${display ? "lg:max-w-fit" : "sm:max-w-[220px] lg:max-w-[320px]"}`)}
                 style={{ objectFit: "contain" }}
               />
             </a>
