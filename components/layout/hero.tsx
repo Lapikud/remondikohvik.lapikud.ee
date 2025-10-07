@@ -42,9 +42,9 @@ export const Hero = () => (
     </div>
 
     {/* Main content */}
-    <div className="w-full h-full z-10 flex justify-between flex-col gap-4 lg:gap-8 relative text-secondary-foreground lg:py-32">
+    <div className="w-full h-full z-10 flex justify-between flex-col gap-4 lg:gap-8 relative text-secondary-foreground lg:py-48">
       {/* Main section */}
-      <div className="flex flex-col  gap-4 lg:gap-8 px-8 lg:px-20 container py-8 not-lg:py-32 lg:pb-8">
+      <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container py-32">
         <div className="flex flex-col sm:gap-4">
           <Logo
             className="lg:hidden flex items-center"
