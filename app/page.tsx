@@ -5,7 +5,7 @@ import { HistorySection } from "@/components/layout/history";
 import { InfoSection } from "@/components/layout/info";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
-import { Kontakt } from "@/components/layout/kontakt";
+// import { Kontakt } from "@/components/layout/kontakt";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <InfoSection />
         <HistorySection />
-        <Kontakt />
+        {/* <Kontakt /> */}
       </main>
       <Footer />
     </>
