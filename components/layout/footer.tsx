@@ -98,7 +98,7 @@ export const Footer = () => (
 
       <div className="pl-5 pr-5 ">
         <h4 className="text-l font-syncopate font-bold mb-4">
-          Meie sotsiaalid
+          Sotsiaalmeedia
         </h4>
 
         <div className="flex">

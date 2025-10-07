@@ -17,7 +17,7 @@ export const Kontakt = () => (
     <div className="w-full h-full z-10 relative text-secondary-foreground container mx-auto py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 flex flex-col xl:flex-row justify-around items-start xl:items-center gap-8 lg:gap-10">
       <ContentBox title="Kontakt">
         <h3 className="text-xl lg:text-3xl uppercase mt-6 font-syncopate font-bold">
-          Peakorraldajad
+          Korraldaja
         </h3>
         <div>
           <strong className="font-syncopate">MTÜ Lapikud</strong>
