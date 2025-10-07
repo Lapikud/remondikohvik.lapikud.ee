@@ -10,21 +10,20 @@ const orgs = {
     "assets/lapikud-logo.svg",
     "--primary"
   ],
-  "Tallinna Tööstushariduskeskus": [
-    "https://tthk.ee",
-    "assets/TTHK-logo.png",
-    "--background",
-  ],
   "Tallinna Tehnikaülikooli Robotiklubi": [
     "https://robotiklubi.ee",
     "assets/Robotiklubi-logo.png",
     "",
   ],
+  "Tallinna Tööstushariduskeskus": [
+    "https://tthk.ee",
+    "assets/TTHK-logo.png",
+    "--background",
+  ],
   "Kspace": [
     "https://k-space.ee",
     "assets/kspace-logo1.svg",
     "--alpha-0",
-    "hidden lg:block"
   ],
 };
 
@@ -47,29 +46,29 @@ export const Footer = () => (
       <div className="flex-wrap">
         <div
           className={cn(
-            "flex not-lg:flex-col lg:h-24 not-lg:bottom-0 w-full",
+            "flex flex-wrap lg:h-24 not-lg:bottom-0 w-full",
             "h-auto *:h-12",
-            "lg:justify-start lg:gap-4",
+            "lg:justify-start gap-4",
             "lg:px-25 lg:container"
           )}>
           {...Object.entries(orgs).map(([org, [link, src, color, display]]) => (
             <div
               key={org}
-              className={cn(`px-2 lg:py-2 h-full lg:max-w-fit flex items-center justify-center lg:rounded-full ${display}`)}
+              className={cn(`px-2 py-2 h-full lg:max-w-fit flex items-center justify-center rounded-full ${display}`)}
               style={color ? {backgroundColor: `var(${color})`} : undefined}
             >
               <a
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full flex items-center justify-center relative z-20"
+                className="w-full h-full flex items-center justify-center relative z-20 px-4"
               >
                 <Image
                   src={src}
                   alt={org}
                   width={240}
                   height={120}
-                  className={cn(`max-w-full max-h-full object-contain ${display ? "lg:max-w-fit" : "sm:max-w-[220px] lg:max-w-[320px]"}`)}
+                  className={cn(`max-w-full max-h-full object-contain max-w-fit`)}
                   style={{objectFit: "contain"}}/>
               </a>
             </div>
