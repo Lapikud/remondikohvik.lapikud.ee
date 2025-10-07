@@ -23,7 +23,7 @@ export const Navbar = () => (
             key={name}
             className="inline-block not-sm:mx-4 mx-2 lg:mx-6 text-secondary-foreground hover:text-primary transition-colors"
           >
-            <Link href={link} className="font-medium text-lg lg:text-xl">
+            <Link href={link} className="font-medium text-sm xs:text-lg lg:text-xl">
               {name.charAt(0).toUpperCase() + name.slice(1)}
             </Link>
           </li>
