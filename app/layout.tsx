@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Lato, Syncopate } from "next/font/google";
+import { Lato, Syncopate, Parkinsans } from "next/font/google";
 import "./global.css";
 
 export const metadata: Metadata = {
@@ -26,6 +26,12 @@ const syncopate = Syncopate({
   variable: "--font-syncopate",
 });
 
+// const parkinsans = Parkinsans({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700", "800"],
+//   variable: "--font-parkinsans",
+// });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,7 +42,7 @@ export default function RootLayout({
       <body
         className={cn(
           "antialiased scroll-smooth",
-          `${lato.variable} ${syncopate.variable}`
+          `${lato.variable} ${syncopate.variable}`,
         )}
       >
         {children}

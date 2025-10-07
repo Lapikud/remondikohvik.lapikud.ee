@@ -18,22 +18,15 @@ const orgs = {
     "assets/Robotiklubi-logo.png",
     "--robot-club-color",
   ],
-  "Kspace": [
-    "https://k-space.ee",
-    "assets/kspace-logo1.svg",
-    "--alpha-0",
-    "hidden lg:block"
-  ],
-  "Kspace2": [
+  "K-space": [
     "https://k-space.ee",
     "assets/kspace-logo2.svg",
     "--kspace-color",
-    "hidden not-lg:block"
   ],
 };
 
 export const Hero = () => (
-  <section className="w-full h-fit min-h-96 flex relative items-center justify-start md:pt-20">
+  <section className="w-full flex relative items-center justify-start md:pt-20">
     <div className="w-full h-full absolute top-0 left-0 overflow-hidden z-1">
       <div className="hidden xl:block w-2/5 h-full min-h-screen absolute right-0">
         <Dec direction="inverse" />
@@ -50,14 +43,14 @@ export const Hero = () => (
     </div>
 
     {/* Main content */}
-    <div className="w-full h-full z-10 flex justify-center flex-col gap-4 lg:gap-8 relative text-secondary-foreground min-h-screen">
+    <div className="w-full h-full z-10 flex justify-between flex-col gap-4 lg:gap-8 relative text-secondary-foreground lg:py-32">
       {/* Main section */}
-      <div className="flex flex-col not-lg:min-h-96 gap-4 lg:gap-8 px-8 lg:px-20 container">
+      <div className="flex flex-col  gap-4 lg:gap-8 px-8 lg:px-20 container py-8 lg:pb-8">
         <div className="flex flex-col sm:gap-4">
           <Logo
-            className="lg:hidden"
-            imgClassName="md:hidden"
-            textClassName="md:text-2xl"
+            className="lg:hidden flex items-center"
+            imgClassName="sm:hidden size-16"
+            textClassName="text-2xl sm:hidden"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
             Tegid Katki?
@@ -92,18 +85,18 @@ export const Hero = () => (
       {/* Orgs */}
       <div
         className={cn(
-          " flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full",
-          "h-auto *:h-16",
+          "flex flex-row not-lg:flex-col w-full",
+          // "h-auto *:h-16",
           // this is also an option...but like we experimenting and shit
           // ' flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full gap-x-5 *:rounded-2xl',
           "flex-wrap lg:justify-start lg:gap-4",
-          "lg:px-20 lg:container"
+          "lg:px-20 lg:container",
         )}
       >
         {Object.entries(orgs).map(([org, [link, src, color, display]]) => (
           <div
             key={org}
-            className={cn(`px-8 py-2 lg:py-2 w-full h-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`)}
+            className={cn(`h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`)}
             style={color ? { backgroundColor: `var(${color})` } : undefined}
           >
             <a
