@@ -48,7 +48,7 @@ export const Hero = () => (
     {/* Main content */}
     <div className="w-full h-full z-10 flex justify-between flex-col gap-4 lg:gap-8 relative text-secondary-foreground lg:py-32">
       {/* Main section */}
-      <div className="flex flex-col  gap-4 lg:gap-8 px-8 lg:px-20 container py-8 lg:pb-8">
+      <div className="flex flex-col  gap-4 lg:gap-8 px-8 lg:px-20 container py-8 not-lg:py-32 lg:pb-8">
         <div className="flex flex-col sm:gap-4">
           <Logo
             className="lg:hidden flex items-center"
@@ -94,12 +94,15 @@ export const Hero = () => (
           // ' flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full gap-x-5 *:rounded-2xl',
           "flex-wrap lg:justify-start lg:gap-4",
           "lg:px-20 lg:container",
+          "xl:w-4/5"
         )}
       >
         {Object.entries(orgs).map(([org, [link, src, color, display]]) => (
           <div
             key={org}
-            className={cn(`h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`)}
+            className={cn(
+              `h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`
+            )}
             style={color ? { backgroundColor: `var(${color})` } : undefined}
           >
             <a
@@ -114,7 +117,13 @@ export const Hero = () => (
                 // Let the anchor control layout; avoid w-full/h-full on Image to prevent oversized logos that exceed responsive breakpoints
                 width={240}
                 height={120}
-                className={cn(`max-w-full max-h-full object-contain ${display ? "lg:max-w-fit" : "sm:max-w-[220px] lg:max-w-[320px]"}`)}
+                className={cn(
+                  `max-w-full max-h-full object-contain ${
+                    display
+                      ? "lg:max-w-fit"
+                      : "sm:max-w-[220px] lg:max-w-[320px]"
+                  }`
+                )}
                 style={{ objectFit: "contain" }}
               />
             </a>
