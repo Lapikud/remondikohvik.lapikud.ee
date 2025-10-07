@@ -4,28 +4,28 @@ import Image from "next/image";
 import {SiInstagram, SiFacebook} from "react-icons/si";
 import {cn} from "@/lib/utils";
 
-const orgs = {
-  Lapikud: [
-    "https://lapikud.ee",
-    "assets/lapikud-logo.svg",
-    "--primary"
-  ],
-  "Tallinna Tehnikaülikooli Robotiklubi": [
-    "https://robotiklubi.ee",
-    "assets/Robotiklubi-logo.png",
-    "",
-  ],
-  "Tallinna Tööstushariduskeskus": [
-    "https://tthk.ee",
-    "assets/TTHK-logo.png",
-    "--background",
-  ],
-  "Kspace": [
-    "https://k-space.ee",
-    "assets/kspace-logo1.svg",
-    "--alpha-0",
-  ],
-};
+// const orgs = {
+//   Lapikud: [
+//     "https://lapikud.ee",
+//     "assets/lapikud-logo.svg",
+//     "--primary"
+//   ],
+//   "Tallinna Tehnikaülikooli Robotiklubi": [
+//     "https://robotiklubi.ee",
+//     "assets/Robotiklubi-logo.png",
+//     "",
+//   ],
+//   "Tallinna Tööstushariduskeskus": [
+//     "https://tthk.ee",
+//     "assets/TTHK-logo.png",
+//     "--background",
+//   ],
+//   "Kspace": [
+//     "https://k-space.ee",
+//     "assets/kspace-logo1.svg",
+//     "--alpha-0",
+//   ],
+// };
 
 export const Footer = () => (
 
@@ -43,45 +43,46 @@ export const Footer = () => (
           textClassName="hidden lg:inline-block text-secondary-foreground lg:text-l"/>
       </div>
 
-      <div className="flex-wrap">
-        <div
-          className={cn(
-            "flex flex-wrap lg:h-24 not-lg:bottom-0 w-full",
-            "h-auto *:h-12",
-            "lg:justify-start gap-4",
-            "lg:px-25 lg:container"
-          )}>
-          {...Object.entries(orgs).map(([org, [link, src, color, display]]) => (
-            <div
-              key={org}
-              className={cn(`px-2 py-2 h-full lg:max-w-fit flex items-center justify-center rounded-full ${display}`)}
-              style={color ? {backgroundColor: `var(${color})`} : undefined}
-            >
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full h-full flex items-center justify-center relative z-20 px-4"
-              >
-                <Image
-                  src={src}
-                  alt={org}
-                  width={240}
-                  height={120}
-                  className={cn(`max-w-full max-h-full object-contain max-w-fit`)}
-                  style={{objectFit: "contain"}}/>
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/*<div className="flex-wrap">*/}
+      {/*  <div*/}
+      {/*    className={cn(*/}
+      {/*      "flex flex-wrap lg:h-24 not-lg:bottom-0 w-full",*/}
+      {/*      "h-auto *:h-12",*/}
+      {/*      "lg:justify-start gap-4",*/}
+      {/*      "lg:px-25 lg:container"*/}
+      {/*    )}>*/}
+      {/*    {...Object.entries(orgs).map(([org, [link, src, color, display]]) => (*/}
+      {/*      <div*/}
+      {/*        key={org}*/}
+      {/*        className={cn(`px-2 py-2 h-full lg:max-w-fit flex items-center justify-center rounded-full ${display}`)}*/}
+      {/*        style={color ? {backgroundColor: `var(${color})`} : undefined}*/}
+      {/*      >*/}
+      {/*        <a*/}
+      {/*          href={link}*/}
+      {/*          target="_blank"*/}
+      {/*          rel="noopener noreferrer"*/}
+      {/*          className="w-full h-full flex items-center justify-center relative z-20 px-4"*/}
+      {/*        >*/}
+      {/*          <Image*/}
+      {/*            src={src}*/}
+      {/*            alt={org}*/}
+      {/*            width={240}*/}
+      {/*            height={120}*/}
+      {/*            className={cn(`max-w-full max-h-full object-contain max-w-fit`)}*/}
+      {/*            style={{objectFit: "contain"}}/>*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+      
     </div>
 
     <div
       id="contact"
-      className="flex flex-wrap text-accent"
+      className="flex flex-wrap text-accent mb-6"
     >
-      <div className="pr-12 mb-4">
+      <div className="pr-12 mb-6">
         <h4 className="text-l font-syncopate font-bold mb-4">
           MTÜ Lapikud
         </h4>
@@ -96,7 +97,7 @@ export const Footer = () => (
         </ul>
       </div>
 
-      <div className="pl-5 pr-5 ">
+      <div className="">
         <h4 className="text-l font-syncopate font-bold mb-4">
           Meie sotsiaalid
         </h4>
