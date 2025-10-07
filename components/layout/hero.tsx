@@ -6,14 +6,17 @@ import Image from "next/image";
 import { Logo } from "../logo";
 
 const orgs = {
-  // org-name: [link, src, color]
-  Lapikud: ["https://lapikud.ee", "assets/lapikud-logo.svg", "--primary"],
+  Lapikud: [
+    "https://lapikud.ee", 
+    "assets/lapikud-logo.svg", 
+    "--primary"
+  ],
   "Tallinna Tööstushariduskeskus": [
     "https://tthk.ee",
     "assets/TTHK-logo.png",
     "--background",
   ],
-  "Tallinna Technikaülikool Robotiklubi": [
+  "Tallinna Tehnikaülikooli Robotiklubi": [
     "https://robotiklubi.ee",
     "assets/Robotiklubi-logo.png",
     "--robot-club-color",
