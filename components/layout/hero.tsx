@@ -16,7 +16,7 @@ const orgs = {
     "assets/TTHK-logo.png",
     "--background",
   ],
-  "Tallinna Tehnikaülikool Robotiklubi": [
+  "Tallinna Tehnikaülikooli Robotiklubi": [
     "https://robotiklubi.ee",
     "assets/Robotiklubi-logo.png",
     "--robot-club-color",
