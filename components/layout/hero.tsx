@@ -6,11 +6,7 @@ import Image from "next/image";
 import { Logo } from "../logo";
 
 const orgs = {
-  Lapikud: [
-    "https://lapikud.ee", 
-    "assets/lapikud-logo.svg", 
-    "--primary"
-  ],
+  Lapikud: ["https://lapikud.ee", "assets/lapikud-logo.svg", "--primary"],
   "Tallinna Tööstushariduskeskus": [
     "https://tthk.ee",
     "assets/TTHK-logo.png",
@@ -52,8 +48,8 @@ export const Hero = () => (
         <div className="flex flex-col sm:gap-4">
           <Logo
             className="lg:hidden flex items-center"
-            imgClassName="sm:hidden size-16"
-            textClassName="text-2xl sm:hidden"
+            imgClassName="sm:hidden size-10"
+            textClassName="text-lg sm:hidden"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
             Tegid Katki?
