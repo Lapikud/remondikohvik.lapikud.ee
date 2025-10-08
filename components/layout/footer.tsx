@@ -30,11 +30,11 @@ import { SiInstagram, SiFacebook } from "react-icons/si";
 export const Footer = () => (
 
   <footer id="footer"
-    className="bg-secondary flex flex-col justify-center sm:justify-between px-6 py-8 md:px-12 md:py-16 gap-4 md:gap-8"
+    className="bg-secondary flex flex-col justify-center sm:justify-between px-4 xs:px-6 py-6 xs:py-8 md:px-12 md:py-16 gap-3 xs:gap-4 md:gap-8"
   >
     <div
       id="logos"
-      className="flex md:items-center gap-8 md:gap-0 justify-between flex-col md:flex-row"
+      className="flex md:items-center gap-6 xs:gap-8 md:gap-0 justify-between flex-col md:flex-row"
     >
       <div className="flex flex-col items-start md:items-center">
         <Logo
@@ -80,14 +80,14 @@ export const Footer = () => (
 
     <div
       id="contact"
-      className="flex flex-wrap text-accent mb-6"
+      className="flex flex-wrap text-accent mb-4 xs:mb-6"
     >
-      <div className="pr-12 mb-6">
-        <h4 className="text-l font-syncopate font-bold mb-4">
+      <div className="pr-8 xs:pr-12 mb-4 xs:mb-6">
+        <h4 className="text-base xs:text-lg font-syncopate font-bold mb-3 xs:mb-4">
           MTÜ Lapikud
         </h4>
 
-        <ul>
+        <ul className="text-xs xs:text-sm space-y-1">
           <li>Aadress: Akadeemia tee 5, 12616 Tallinn, Eesti</li>
           <li>E-post: lapikud@lapikud.ee</li>
           <li>Telefon: +372 58 160 799</li>
@@ -98,7 +98,7 @@ export const Footer = () => (
       </div>
 
       <div className="">
-        <h4 className="text-l font-syncopate font-bold mb-4">
+        <h4 className="text-base xs:text-lg font-syncopate font-bold mb-3 xs:mb-4">
           Sotsiaalmeedia
         </h4>
 
@@ -106,31 +106,31 @@ export const Footer = () => (
           <a
             href="https://www.instagram.com/lapikud"
             target="_blank"
-            className="mx-4"
+            className="mr-4 xs:mr-6"
             rel="noopener noreferrer"
           >
             <SiInstagram
               title="Instagram"
-              size={"2em"}
+              size={"1.75em"}
               className="hover:text-primary transition" />
           </a>
 
           <a
             href="https://www.facebook.com/Lapikud/"
             target="_blank"
-            className="mx-4"
+            className="mr-4 xs:mr-6"
             rel="noopener noreferrer"
           >
             <SiFacebook
               title="Facebook"
-              size={"2em"}
+              size={"1.75em"}
               className="hover:text-primary transition" />
           </a>
 
         </div>
       </div>
     </div>
-    <div className="flex items-center justify-center text-primary font-bold font-syncopate">
+    <div className="flex items-center justify-center text-primary font-bold font-syncopate text-xs xs:text-sm">
       © 2025 MTÜ Lapikud
     </div>
   </footer>

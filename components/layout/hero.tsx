@@ -44,36 +44,36 @@ export const Hero = () => (
     {/* Main content */}
     <div className="w-full h-full z-10 flex justify-between flex-col gap-4 lg:gap-8 relative text-secondary-foreground lg:py-48">
       {/* Main section */}
-      <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container py-32">
+      <div className="flex flex-col gap-4 lg:gap-8 px-4 sm:px-8 lg:px-20 container py-32">
         <div className="flex flex-col sm:gap-4">
           <Logo
             className="lg:hidden flex items-center"
             imgClassName="sm:hidden size-10"
-            textClassName="text-lg sm:hidden"
+            textClassName="text-base sm:text-lg sm:hidden"
           />
-          <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
+          <h1 className="font-syncopate text-xl xs:text-2xl md:text-4xl lg:text-6xl font-black leading-tight">
             Kas midagi on katki?
             <br />
             Parandame koos!
           </h1>
         </div>
-        <p className="md:text-xl">
+        <p className="text-sm xs:text-base md:text-xl">
           Elektroonikaseadmeid ei ole vaja ära visata! Loome koos jätkusuutlikku tulevikku!
         </p>
-        <div className="**:font-syncopate items-center px-4 max-w-full py-3 lg:px-10 lg:py-5 bg-primary w-max flex gap-4 lg:gap-8">
-          <div className="flex items-center gap-1 lg:gap-2.5 ">
-            <Calendar className="not-sm:size-3 -translate-y-0.25" />
-            <p className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl">
+        <div className="**:font-syncopate items-center px-2 xs:px-4 max-w-full py-2 xs:py-3 lg:px-10 lg:py-5 bg-primary w-max flex gap-2 xs:gap-4 lg:gap-8">
+          <div className="flex items-center gap-0.5 xs:gap-1 lg:gap-2.5">
+            <Calendar className="size-3 xs:size-4 sm:size-5 -translate-y-0.25" />
+            <p className="font-bold text-white md:hover:underline text-[10px] xs:text-xs md:text-sm lg:text-2xl">
               8. Nov 2025
             </p>
           </div>
-          <div className="flex items-center gap-1 lg:gap-2.5 ">
-            <MapPin className="not-sm:size-3 -translate-y-0.25" />
+          <div className="flex items-center gap-0.5 xs:gap-1 lg:gap-2.5">
+            <MapPin className="size-3 xs:size-4 sm:size-5 -translate-y-0.25" />
             <a
               href="https://maps.app.goo.gl/B77ZdAA7KW3k3mze6"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl relative z-20"
+              className="font-bold text-white md:hover:underline text-[10px] xs:text-xs md:text-sm lg:text-2xl relative z-20"
             >
               Taltech peamaja kohvik
             </a>
@@ -97,7 +97,7 @@ export const Hero = () => (
           <div
             key={org}
             className={cn(
-              `h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`
+              `h-[8ch] xs:h-[9ch] px-4 xs:px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`
             )}
             style={color ? { backgroundColor: `var(${color})` } : undefined}
           >

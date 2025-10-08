@@ -7,6 +7,7 @@
   --font-lato: var(--font-lato), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-syncopate: var(--font-syncopate), ui-monospace, "Consolas", "Liberation Mono", "Courier New", "Courier", monospace;
   --font-parkinsans: var(--font-parkinsans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --breakpoint-xxs: 17.5rem;
   --breakpoint-xs: 24rem;
 }
 
@@ -114,4 +115,36 @@
   content: "";
   box-shadow: 2.5rem 3rem 0 -0.625rem var(--primary), 3.5rem 6rem 0 -0.95rem var(--primary);
   @apply rounded-full bg-primary aspect-square absolute right-0 top-0 w-[14.25%] max-w-10 sm:max-w-15 block;
+}
+
+/* Responsive fixes for very small screens (280-320px) */
+@media (max-width: 320px) {
+  /* Reduce padding on container elements */
+  .container {
+    @apply px-4;
+  }
+  
+  /* Hero section optimizations */
+  h1 {
+    @apply text-xl leading-tight;
+  }
+  
+  /* Navbar optimizations */
+  nav ul li {
+    @apply mx-1.5 text-xs;
+  }
+  
+  /* Content box title sizing */
+  .font-syncopate {
+    @apply text-base;
+  }
+  
+  /* Footer optimizations */
+  footer {
+    @apply px-4 py-6 gap-3;
+  }
+  
+  footer ul li {
+    @apply text-sm leading-relaxed;
+  }
 }

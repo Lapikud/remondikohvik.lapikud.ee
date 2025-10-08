@@ -37,8 +37,8 @@ export const InfoSection = () => (
       />
     </div>
 
-    <div className="w-full flex lg:items-center not-lg:container lg:py-20 not-lg:mx-auto not-lg:px-8 not-lg:py-24">
-      <div className="w-full h-fit flex flex-col gap-16 ">
+    <div className="w-full flex lg:items-center not-lg:container lg:py-20 not-lg:mx-auto not-lg:px-4 xs:not-lg:px-8 not-lg:py-16 xs:not-lg:py-24">
+      <div className="w-full h-fit flex flex-col gap-12 xs:gap-16">
         <Image
           src={"assets/info-1.png"}
           alt="last year event pic"
@@ -48,14 +48,14 @@ export const InfoSection = () => (
         />
         <ContentBox
           title="Kus?"
-          icon={<MapPin className="inline mr-2 stroke-3 lg:size-12" />}
+          icon={<MapPin className="inline mr-1 xs:mr-2 stroke-3 size-5 xs:size-6 lg:size-12" />}
         >
           <span>Taltech Peamaja Kohvik</span>
           <span>Akadeemia tee 5, Tallinn</span>
         </ContentBox>
         <ContentBox
           title="Millal?"
-          icon={<Calendar className="inline mr-2 stroke-3 lg:size-12" />}
+          icon={<Calendar className="inline mr-1 xs:mr-2 stroke-3 size-5 xs:size-6 lg:size-12" />}
         >
           <span>8. November, 2025</span>
           <span>11:00 - 15:00</span>
@@ -68,7 +68,7 @@ export const InfoSection = () => (
           className="w-full object-contain lg:hidden"
         />
         <ContentBox title="Lisainfo">
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside space-y-1 xs:space-y-2">
             <li>Tasuta tee, kohv ja suupisted</li>
             <li>
               Palun võtke kaasa oma arvutid, riided, mobiiltelefonid või muud seadmed, mis vajavad parandamist -
