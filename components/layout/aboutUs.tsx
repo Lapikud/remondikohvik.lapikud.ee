@@ -14,7 +14,7 @@ export const AboutUs = () => (
       </div>
       
       {/* Heading */}
-      <h2 className="font-syncopate text-3xl lg:text-5xl font-black text-foreground">
+      <h2 className="font-syncopate text-3xl lg:text-4xl font-black text-foreground">
         Mis on remondikohvik?
       </h2>
       
