@@ -3,26 +3,31 @@ import { Calendar, MapPin } from "lucide-react";
 import { Dec } from "@/components/Dec";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Logo } from "../logo";
 
 const orgs = {
-  // org-name: [link, src, color]
   Lapikud: ["https://lapikud.ee", "assets/lapikud-logo.svg", "--primary"],
   "Tallinna Tööstushariduskeskus": [
     "https://tthk.ee",
     "assets/TTHK-logo.png",
     "--background",
   ],
-  "Tallinna Technikaülikool Robotiklubi": [
+  "Tallinna Tehnikaülikooli Robotiklubi": [
     "https://robotiklubi.ee",
     "assets/Robotiklubi-logo.png",
-    "",
+    "--robot-club-color",
+  ],
+  "K-space": [
+    "https://k-space.ee",
+    "assets/kspace-logo2.svg",
+    "--kspace-color",
   ],
 };
 
 export const Hero = () => (
-  <section className="w-full h-screen flex relative items-center justify-start">
+  <section className="w-full flex relative items-center justify-start md:pt-20">
     <div className="w-full h-full absolute top-0 left-0 overflow-hidden z-1">
-      <div className="hidden xl:block w-2/5 h-screen absolute right-0">
+      <div className="hidden xl:block w-2/5 h-full min-h-screen absolute right-0">
         <Dec direction="inverse" />
       </div>
       <div className="w-full h-full relative">
@@ -37,16 +42,14 @@ export const Hero = () => (
     </div>
 
     {/* Main content */}
-    <div className="w-full h-full z-10 flex justify-center flex-col gap-4 lg:gap-8 relative  text-secondary-foreground">
+    <div className="w-full h-full z-10 flex justify-between flex-col gap-4 lg:gap-8 relative text-secondary-foreground lg:py-48">
       {/* Main section */}
-      <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-4">
-          <Image
-            src="assets/remondikohvik-logo.png"
-            alt="Remondikohvik logo"
-            width={160}
-            height={80}
-            className="-translate-y-2"
+      <div className="flex flex-col gap-4 lg:gap-8 px-8 lg:px-20 container py-32">
+        <div className="flex flex-col sm:gap-4">
+          <Logo
+            className="lg:hidden flex items-center"
+            imgClassName="sm:hidden size-10"
+            textClassName="text-lg sm:hidden"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
             Tegid Katki?
@@ -81,17 +84,21 @@ export const Hero = () => (
       {/* Orgs */}
       <div
         className={cn(
-          " flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full",
-          "h-auto *:h-16",
+          "flex flex-row not-lg:flex-col w-full",
+          // "h-auto *:h-16",
           // this is also an option...but like we experimenting and shit
           // ' flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full gap-x-5 *:rounded-2xl',
-          "lg:px-20 lg:container"
+          "flex-wrap lg:justify-start lg:gap-4",
+          "lg:px-20 lg:container",
+          "xl:w-4/5"
         )}
       >
-        {Object.entries(orgs).map(([org, [link, src, color]]) => (
+        {Object.entries(orgs).map(([org, [link, src, color, display]]) => (
           <div
             key={org}
-            className="px-8 py-2 lg:py-2 w-full h-full lg:max-w-fit bg-black flex items-center justify-center"
+            className={cn(
+              `h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`
+            )}
             style={color ? { backgroundColor: `var(${color})` } : undefined}
           >
             <a
@@ -106,7 +113,13 @@ export const Hero = () => (
                 // Let the anchor control layout; avoid w-full/h-full on Image to prevent oversized logos that exceed responsive breakpoints
                 width={240}
                 height={120}
-                className="max-w-full max-h-full object-contain sm:max-w-[220px] lg:max-w-[320px]"
+                className={cn(
+                  `max-w-full max-h-full object-contain ${
+                    display
+                      ? "lg:max-w-fit"
+                      : "sm:max-w-[220px] lg:max-w-[320px]"
+                  }`
+                )}
                 style={{ objectFit: "contain" }}
               />
             </a>

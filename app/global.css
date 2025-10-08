@@ -1,10 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 
 @theme {
   --font-lato: var(--font-lato), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-syncopate: var(--font-syncopate), ui-monospace, "Consolas", "Liberation Mono", "Courier New", "Courier", monospace;
+  --font-parkinsans: var(--font-parkinsans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --breakpoint-xs: 24rem;
 }
 
 
@@ -46,11 +49,14 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  --kspace-color: #145EA8;
+  --robot-club-color: #07166B;
+  --alpha-0: #0000;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50 font-lato;
+    @apply border-border outline-ring/50 font-lato scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;
