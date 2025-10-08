@@ -67,7 +67,7 @@ export const InfoSection = () => (
           height={400}
           className="w-full object-contain lg:hidden"
         />
-        <ContentBox title="Lisainformatsioon">
+        <ContentBox title="Lisainfo">
           <ul className="list-disc list-inside">
             <li>Tasuta tee, kohv ja suupisted</li>
             <li>
