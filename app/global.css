@@ -63,6 +63,29 @@
   scale:0.85
 }
 
+#about-us-images > .bubbles {
+  scale:0.95;
+}
+
+#about-us-images > :first-child {
+  align-self: end !important;
+}
+
+@media (max-width: 1023px) {
+
+  #about-us-images {
+    height: fit-content;
+    justify-content: center;
+  }
+
+  #about-us-images > :first-child {
+    display: none;
+  }
+}
+
+
+
+
 .bubbles.bubbles-bl::before {
   content: "";
   box-shadow: -2.5rem -3rem 0 -0.625rem var(--primary), -3.5rem -6rem 0 -0.95rem var(--primary);
