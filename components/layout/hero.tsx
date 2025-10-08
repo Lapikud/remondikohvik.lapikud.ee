@@ -52,13 +52,13 @@ export const Hero = () => (
             textClassName="text-lg sm:hidden"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
-            Tegid Katki?
+            Kas midagi on katki?
             <br />
             Parandame koos!
           </h1>
         </div>
         <p className="md:text-xl">
-          Elektroonikat ei pea ära viskama! Teeme erinevust koos!
+          Elektroonikaseadmeid ei ole vaja ära visata! Loome koos jätkusuutlikku tulevikku!
         </p>
         <div className="**:font-syncopate items-center px-4 max-w-full py-3 lg:px-10 lg:py-5 bg-primary w-max flex gap-4 lg:gap-8">
           <div className="flex items-center gap-1 lg:gap-2.5 ">

@@ -67,24 +67,24 @@ export const InfoSection = () => (
           height={400}
           className="w-full object-contain lg:hidden"
         />
-        <ContentBox title="Muu info">
+        <ContentBox title="Lisainformatsioon">
           <ul className="list-disc list-inside">
-            <li>Tasuta tee, kohvik ja pirukad</li>
+            <li>Tasuta tee, kohv ja suupisted</li>
             <li>
-              Too kaasa enda arvutid, riided, moblad, millel parandust vaja on -
-              parandame koos kõik ära{" "}
-              <span className="text-primary">(ja tasuta!)</span>
+              Palun võtke kaasa oma arvutid, riided, mobiiltelefonid või muud seadmed, mis vajavad parandamist -
+              parandame need koos ära{" "}
+              <span className="text-primary">(tasuta teenus!)</span>
             </li>
             {/* TODO put the correct link to the event */}
             <li>
-              Pane 'Going'{" "}
+              Märkige {" "}
               <Link
                 href="https://facebook.com/lapikud"
                 className="text-primary"
               >
-                Facebook'is
-              </Link>{" "}
-              ka!
+                Facebook'i
+              </Link> {" "}
+              üritusel et olete tulemas!
             </li>
           </ul>
         </ContentBox>

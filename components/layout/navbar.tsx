@@ -6,7 +6,7 @@ const links = {
   meist: "#meist",
   info: "#info",
   ajalugu: "#ajalugu",
-  kontakt: "#kontakt",
+  kontakt: "#footer",
 };
 
 export const Navbar = () => (

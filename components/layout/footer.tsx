@@ -1,7 +1,7 @@
 import React from 'react';
-import {Logo} from "@/components/logo";
+import { Logo } from "@/components/logo";
 // import Image from "next/image";
-import {SiInstagram, SiFacebook} from "react-icons/si";
+import { SiInstagram, SiFacebook } from "react-icons/si";
 // import {cn} from "@/lib/utils";
 
 // const orgs = {
@@ -29,7 +29,7 @@ import {SiInstagram, SiFacebook} from "react-icons/si";
 
 export const Footer = () => (
 
-  <div
+  <footer id="footer"
     className="bg-secondary flex flex-col justify-center sm:justify-between px-6 py-8 md:px-12 md:py-16 gap-4 md:gap-8"
   >
     <div
@@ -40,7 +40,7 @@ export const Footer = () => (
         <Logo
           className="not-sm:hidden w-full h-full items-center"
           imgClassName="not-sm:hidden md:size-12 lg:size-12 mr-2"
-          textClassName="hidden lg:inline-block text-secondary-foreground lg:text-l"/>
+          textClassName="hidden lg:inline-block text-secondary-foreground lg:text-l" />
       </div>
 
       {/*<div className="flex-wrap">*/}
@@ -75,7 +75,7 @@ export const Footer = () => (
       {/*    ))}*/}
       {/*  </div>*/}
       {/*</div>*/}
-      
+
     </div>
 
     <div
@@ -99,7 +99,7 @@ export const Footer = () => (
 
       <div className="">
         <h4 className="text-l font-syncopate font-bold mb-4">
-          Meie sotsiaalid
+          Sotsiaalmeedia
         </h4>
 
         <div className="flex">
@@ -112,7 +112,7 @@ export const Footer = () => (
             <SiInstagram
               title="Instagram"
               size={"2em"}
-              className="hover:text-primary transition"/>
+              className="hover:text-primary transition" />
           </a>
 
           <a
@@ -124,7 +124,7 @@ export const Footer = () => (
             <SiFacebook
               title="Facebook"
               size={"2em"}
-              className="hover:text-primary transition"/>
+              className="hover:text-primary transition" />
           </a>
 
         </div>
@@ -133,6 +133,6 @@ export const Footer = () => (
     <div className="flex items-center justify-center text-primary font-bold font-syncopate">
       © 2025 MTÜ Lapikud
     </div>
-  </div>
+  </footer>
 
 );
