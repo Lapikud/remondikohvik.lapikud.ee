@@ -1,8 +1,8 @@
 import React from 'react';
 import {Logo} from "@/components/logo";
-import Image from "next/image";
+// import Image from "next/image";
 import {SiInstagram, SiFacebook} from "react-icons/si";
-import {cn} from "@/lib/utils";
+// import {cn} from "@/lib/utils";
 
 // const orgs = {
 //   Lapikud: [
