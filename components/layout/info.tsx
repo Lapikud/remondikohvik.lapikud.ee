@@ -77,14 +77,14 @@ export const InfoSection = () => (
             </li>
             {/* TODO put the correct link to the event */}
             <li>
-              Märkige üritusel osalemise soov{" "}
+              Märkige {" "}
               <Link
                 href="https://facebook.com/lapikud"
                 className="text-primary"
               >
-                Facebook'is
-              </Link>
-              !
+                Facebook'i
+              </Link> {" "}
+              üritusel et olete tulemas!
             </li>
           </ul>
         </ContentBox>

@@ -25,15 +25,16 @@ export const HistorySection = () => (
           Remondikohviku ajalugu
         </h3>
         <p className="prose prose-lg">
-          Remondikohvik ei ole uus algatus! Üritus sai alguse
-          juba 2013. aastal Skeemipesa, MTÜ Lapikud ja kohviku Pööning koostöös.
-          Üritust on aastate jooksul korraldatud mitmeid kordi.
-          Remondikohviku kontseptsioon on kogu maailmas populaarne ja
-          sellest on välja kasvanud tugev kogukond. Regulaarsed kokkusaamised
-          toovad kokku naabruskonnad, et aidata üksteisel parandada esemeid, mille
-          remontimine üksi võib keerulisena tunduda, ning samal ajal veeta
-          meeldivalt aega koos. Meie eesmärk on luua selline
-          kogukond ka Tallinnas.
+          Remondikohvik ei toimu üldsegi mitte esimest korda! See sai alguse
+          juba 2013. aastal Skeemipesa, Lapikute ja kohviku Pööning koostöös.
+          Vahelduva eduga on üritust korraldatud aastate jooksul mitu korda.
+          Tegelikult ei ole ka remondikohviku idee üldsegi uus, vaid sarnastele
+          üritustele on mitmel pool maailmas päris palju populaarsust kogunenud.
+          Sellest on kujunenud lausa kogukond, mis toob regulaarselt
+          naabruskonna ühtekohtu, et aidata üksteisel korda teha asjad, mille
+          parandamine üksi võib lootusetuna tunduda ning samal ajal ka lõbusalt
+          aega veeta. Loodame, et meie unistus täitub ning näeme sellise
+          kogukonna teket ka Tallinnas.
         </p>
       </ContentBox>
     </div>
