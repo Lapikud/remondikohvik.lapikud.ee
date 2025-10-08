@@ -52,9 +52,9 @@ export const Hero = () => (
             textClassName="text-lg sm:hidden"
           />
           <h1 className="font-syncopate text-2xl md:text-4xl lg:text-6xl font-black">
-            Kas Teie seade on katki?
+            Kas midagi on katki?
             <br />
-            Parandame selle koos!
+            Parandame koos!
           </h1>
         </div>
         <p className="md:text-xl">
