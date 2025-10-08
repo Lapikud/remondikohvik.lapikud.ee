@@ -8,13 +8,13 @@ export const AboutUs = () => (
     <div className="w-full lg:w-1/2 flex flex-col gap-6">
       {/* Label with orange background */}
       <div className="w-fit">
-        <span className="bg-primary text-primary-foreground px-4 py-2 font-syncopate font-bold text-sm lg:text-base">
+        <span className="bg-primary text-primary-foreground px-4 py-2 font-syncopate font-bold text-xs lg:text-base">
           Meist
         </span>
       </div>
       
       {/* Heading */}
-      <h2 className="font-syncopate text-3xl lg:text-5xl font-black text-foreground">
+      <h2 className="font-syncopate sm:text-xl lg:text-5xl font-black text-foreground">
         Mis on remondikohvik?
       </h2>
       
