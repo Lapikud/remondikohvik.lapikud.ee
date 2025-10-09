@@ -63,7 +63,7 @@ export const Hero = () => (
         <div className="**:font-syncopate items-center px-4 max-w-full py-3 lg:px-10 lg:py-5 bg-primary w-max flex gap-4 lg:gap-8">
           <div className="flex items-center gap-1 lg:gap-2.5 ">
             <Calendar className="not-sm:size-3 -translate-y-0.25" />
-            <p className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl">
+            <p className="font-bold text-white not-sm:text-[9px] md:text-xs lg:text-2xl">
               8. Nov 2025
             </p>
           </div>
@@ -73,7 +73,7 @@ export const Hero = () => (
               href="https://maps.app.goo.gl/B77ZdAA7KW3k3mze6"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-white md:hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl relative z-20"
+              className="font-bold text-white md:hover:text-secondary-foreground not-sm:text-[9px] md:text-xs lg:text-2xl relative z-20"
             >
               Taltech peamaja kohvik
             </a>
@@ -86,7 +86,7 @@ export const Hero = () => (
         className={cn(
           "flex flex-row not-lg:flex-col w-full",
           // "h-auto *:h-16",
-          // this is also an option...but like we experimenting and shit
+          // this is also an option...but we are experimenting
           // ' flex not-lg:flex-col h-16 lg:h-24 not-lg:bottom-0 not-lg:absolute w-full gap-x-5 *:rounded-2xl',
           "flex-wrap lg:justify-start lg:gap-4",
           "lg:px-20 lg:container",
@@ -97,15 +97,15 @@ export const Hero = () => (
           <div
             key={org}
             className={cn(
-              `h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display}`
-            )}
+              `h-[9ch] px-8 py-2 lg:py-2 w-full lg:max-w-fit bg-black flex items-center justify-center lg:rounded-full ${display} hover:opacity-75 transition-all`
+            )} 
             style={color ? { backgroundColor: `var(${color})` } : undefined}
           >
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full h-full flex items-center justify-center relative z-20"
+              className="w-full h-full flex items-center justify-center relative z-20 filter"
             >
               <Image
                 src={src}
