@@ -1,17 +1,17 @@
 /** @format */
 
-import { Calendar, MapPin } from "lucide-react";
-import { Dec } from "../Dec";
-import { ContentBox } from "../content";
+import {Calendar, MapPin} from "lucide-react";
+import {Dec} from "../Dec";
+import {ContentBox} from "../content";
 import Link from "next/link";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import {cn} from "@/lib/utils";
 
 export const InfoSection = () => (
   <section id="info" className="w-full max-h-fit flex relative bg-secondary">
     <div className="w-1/5 h-full absolute not-xl:hidden">
       {/* I cant decide if i want the lg or sm. the design says lg but im iffy */}
-      <Dec size="sm" />
+      <Dec size="sm"/>
     </div>
 
     <div
@@ -48,14 +48,14 @@ export const InfoSection = () => (
         />
         <ContentBox
           title="Kus?"
-          icon={<MapPin className="inline mr-2 stroke-3 lg:size-12" />}
+          icon={<MapPin className="inline mr-2 stroke-3 lg:size-12"/>}
         >
           <span>Taltech Peamaja Kohvik</span>
           <span>Akadeemia tee 5, Tallinn</span>
         </ContentBox>
         <ContentBox
           title="Millal?"
-          icon={<Calendar className="inline mr-2 stroke-3 lg:size-12" />}
+          icon={<Calendar className="inline mr-2 stroke-3 lg:size-12"/>}
         >
           <span>8. November, 2025</span>
           <span>11:00 - 15:00</span>
@@ -69,22 +69,21 @@ export const InfoSection = () => (
         />
         <ContentBox title="Lisainfo">
           <ul className="list-disc list-inside">
-            <li>Tasuta tee, kohv ja suupisted</li>
-            <li>
-              Palun võtke kaasa oma arvutid, riided, mobiiltelefonid või muud seadmed, mis vajavad parandamist -
-              parandame need koos ära{" "}
-              <span className="text-primary">(tasuta teenus!)</span>
+            <li className="mb-4">Tasuta tee, kohv ja suupisted</li>
+            <li className="mb-4">
+              Võite võtta kaasa nii katkisi arvuteid, mobiiltelefone ja muid seadmeid, aga ka riideid ja muid väiksemaid
+              esemeid - parandame need koos ära{" "}
+              <span className="italic font-bold">(tasuta!)</span>
             </li>
-            {/* TODO put the correct link to the event */}
-            <li>
-              Märkige {" "}
+            <li className="mb-4 font-bold">
+              Märkige meie {" "}
               <Link
-                href="https://facebook.com/lapikud"
-                className="text-primary"
+                href="https://fb.me/e/8MWIOveGl"
+                className="text-primary hover:underline"
               >
-                Facebook'i
+                Facebooki
               </Link> {" "}
-              üritusel et olete tulemas!
+              üritusel, et olete tulemas!
             </li>
           </ul>
         </ContentBox>
