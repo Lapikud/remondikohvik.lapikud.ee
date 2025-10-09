@@ -75,7 +75,7 @@ export const Hero = () => (
               href="https://maps.app.goo.gl/B77ZdAA7KW3k3mze6"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-white hover:text-secondary-foreground not-sm:text-[9px] md:text-xs lg:text-2xl relative z-20"
+              className="font-bold text-white hover:text-secondary-foreground hover:underline not-sm:text-[9px] md:text-xs lg:text-2xl relative z-20"
             >
               Taltech peamaja kohvik
             </a>
