@@ -72,8 +72,9 @@ export const InfoSection = () => (
             <li className="mb-4">Tasuta tee, kohv ja suupisted</li>
             <li className="mb-4">
               Võite võtta kaasa nii katkisi arvuteid, mobiiltelefone ja muid seadmeid, aga ka riideid ja muid väiksemaid
-              esemeid - parandame need koos ära{" "}
-              <span className="italic font-bold">(tasuta!)</span>
+              esemeid - parandame need koos ära.
+              {/* {" "} */}
+              {/* <span className="italic font-bold">(tasuta!)</span> */}
             </li>
             <li className="mb-4 font-bold">
               Märkige meie {" "}
