@@ -66,7 +66,7 @@ export const Hero = () => (
           <div className="flex items-center gap-1 lg:gap-2.5 ">
             <Calendar className="not-sm:size-3 -translate-y-0.25"/>
             <p className="font-bold text-white not-sm:text-[9px] md:text-xs lg:text-2xl">
-              8. Nov 2025
+              8. Nov 2025 <br/>(11:00 - 16:00)
             </p>
           </div>
           <div className="flex items-center gap-1 lg:gap-2.5 ">
