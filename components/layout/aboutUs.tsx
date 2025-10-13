@@ -3,7 +3,7 @@
 import { ImageFrame } from "../imageFrame";
 
 export const AboutUs = () => (
-  <section className="w-full max-h-fit flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-8 py-24 bg-background container mx-auto px-8">
+  <section id="meist" className="w-full max-h-fit flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-8 py-24 bg-background container mx-auto px-8">
     {/* Left side - Content */}
     <div className="w-full lg:w-1/2 flex flex-col gap-6">
       {/* Label with orange background */}
