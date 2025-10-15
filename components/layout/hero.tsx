@@ -6,16 +6,30 @@ import Image from "next/image";
 import {Logo} from "../logo";
 
 const orgs = {
-  Lapikud: ["https://lapikud.ee", "assets/lapikud-logo.svg", "--primary"],
-  "Tallinna Tööstushariduskeskus": [
-    "https://tthk.ee",
-    "assets/TTHK-logo.png",
-    "--background",
+  "Lapikud": [
+    "https://lapikud.ee", 
+    "assets/lapikud-logo.svg", 
+    "--primary"
+  ],
+  "TalTech": [
+    "https://taltech.ee/rohepoore/kliimanutikas-ulikool/rohelised-teemakuud",
+    "assets/taltech2035.png",
+    "--taltech-color",
   ],
   "Tallinna Tehnikaülikooli Robotiklubi": [
     "https://robotiklubi.ee",
     "assets/Robotiklubi-logo.png",
     "--robot-club-color",
+  ],
+  "Tallinna Tööstushariduskeskus": [
+    "https://tthk.ee",
+    "assets/TTHK-logo.png",
+    "--background",
+  ],
+  "TalTech Üliõpilasesindus": [
+    "https://taltech.ee/tudengielu/uliopilasesindusest",
+    "assets/taltechye.png",
+    "--taltech-color",
   ],
   "K-space": [
     "https://k-space.ee",
