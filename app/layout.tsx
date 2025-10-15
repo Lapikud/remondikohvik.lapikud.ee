@@ -39,6 +39,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="remondikohvik, taltech, lapikud, tallinn, tehnikaülikool, robotiklubi, tthk, k-space, skeemipesa, elektroonika, tasuta, töötuba"/>
+        <meta name="description" content="Remondikohvik on koht, kuhu saab tulla julgelt nõu küsima, ise käed külge lüüa parandamisel või lasta asjatundlikel abil vaadata parandust vajavad esemed. Teid ootavad sõbralikud ja heatujulised abilised, kellega saab ka niisama kohvitades juttu vesta."/>
+        <meta name="author" content="MTÜ Lapikud"/>
+      </head>
       <body
         className={cn(
           "antialiased scroll-smooth",

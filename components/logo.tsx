@@ -15,6 +15,7 @@ export const Logo: FC<
       width={160}
       height={80}
       className={cn("-translate-y-2 size-8 z-51", imgClassName)}
+      loading="lazy"
     />
     <span
       className={cn(

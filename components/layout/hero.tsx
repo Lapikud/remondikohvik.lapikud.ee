@@ -47,10 +47,11 @@ export const Hero = () => (
       <div className="w-full h-full relative">
         <div className="z-2 w-full absolute top-0 left-0 h-full bg-secondary/67 backdrop-blur-[2px]"/>
         <Image
-          src="assets/hero.png"
+          src="assets/hero.webp"
           alt="hero"
           fill={true}
           className="w-full h-full z-0 object-cover bg-center scale-105 bg-fixed"
+          loading="lazy"
         />
       </div>
     </div>
