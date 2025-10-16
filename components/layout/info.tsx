@@ -81,10 +81,23 @@ export const InfoSection = () => (
               <Link
                 href="https://fb.me/e/8MWIOveGl"
                 className="text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Facebooki
               </Link> {" "}
               üritusel, et olete tulemas!
+            </li>
+            <li className="mb-4 font-bold">
+              Soovid vabatahtlikuna osaleda? {" "}
+              <Link
+                href="https://forms.gle/hJgdNLSM9HFjRZwN9"
+                className="text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Registreeri siin!
+              </Link>
             </li>
           </ul>
         </ContentBox>
