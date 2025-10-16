@@ -81,6 +81,8 @@ export const InfoSection = () => (
               <Link
                 href="https://fb.me/e/8MWIOveGl"
                 className="text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Facebooki
               </Link> {" "}
