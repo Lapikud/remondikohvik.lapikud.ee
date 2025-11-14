@@ -21,7 +21,12 @@ export const AboutUs = () => (
       {/* Text content */}
       <div className="text-lg lg:text-xl text-foreground font-lato leading-relaxed">
         <span className="block mb-4">
-        Remondikohvik on koht, kuhu saab tulla julgelt nõu küsima, ise käed külge lüüa parandamisel või lasta asjatundlikel abil vaadata parandust vajavad esemed. Teid ootavad sõbralikud ja heatujulised abilised, kellega saab ka niisama kohvitades juttu vesta. 
+        {/*Remondikohvik on koht, kuhu saab tulla julgelt nõu küsima, ise käed külge lüüa parandamisel 
+          või lasta asjatundlikel abil vaadata parandust vajavad esemed. Teid ootavad sõbralikud ja
+          heatujulised abilised, kellega saab ka niisama kohvitades juttu vesta. */}
+          Remondikohvik on koht, kuhu saate tulla paranduse osas nõu küsima, proovida ise meie tööriistadega
+          enda katkist eset parandada või lasta seda teha meie abilistel ning ise samal ajal pealt vaadata. 
+          Teid ootavad sõbralikud ja heatujulised abilised, kellega saab ka niisama kohvitades juttu vesta.
         </span>
       </div>
     </div>
