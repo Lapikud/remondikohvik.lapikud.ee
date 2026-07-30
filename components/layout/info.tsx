@@ -57,8 +57,8 @@ export const InfoSection = () => (
           title="Millal?"
           icon={<Calendar className="inline mr-2 stroke-3 lg:size-12 -translate-y-0.5"/>}
         >
-          <span>8. November, 2025</span>
-          <span>11:00 - 16:00</span>
+          <span>24. Oktoober, 2026</span>
+          <span>10:00 - 15:00</span>
         </ContentBox>
         <Image
           src={"assets/info-2.png"}
