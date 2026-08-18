@@ -51,14 +51,14 @@ export const InfoSection = () => (
           icon={<MapPin className="inline mr-2 stroke-3 lg:size-12 -translate-y-0.5"/>}
         >
           <span>Taltech Peamaja Kohvik</span>
-          <span>Akadeemia tee 5, Tallinn</span>
+          <span>Ehitajate tee 5, Tallinn</span>
         </ContentBox>
         <ContentBox
           title="Millal?"
           icon={<Calendar className="inline mr-2 stroke-3 lg:size-12 -translate-y-0.5"/>}
         >
           <span>24. Oktoober, 2026</span>
-          <span>10:00 - 15:00</span>
+          <span>11:00 - 15:00</span>
         </ContentBox>
         <Image
           src={"assets/info-2.png"}
@@ -79,7 +79,7 @@ export const InfoSection = () => (
             <li className="mb-4 font-bold">
               Märkige meie {" "}
               <Link
-                href="https://fb.me/e/8MWIOveGl"
+                href="https://fb.me/e/4IpmwYA6f"
                 className="text-primary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export const InfoSection = () => (
             <li className="mb-4 font-bold">
               Soovid vabatahtlikuna osaleda? {" "}
               <Link
-                href="https://forms.gle/hJgdNLSM9HFjRZwN9"
+                href="https://forms.gle/U4aLsrYqH8Ay9Laq9"
                 className="text-primary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
