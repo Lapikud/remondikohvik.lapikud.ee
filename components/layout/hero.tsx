@@ -11,11 +11,21 @@ const orgs = {
     "assets/lapikud-logo.svg", 
     "--primary"
   ],
-  // "TalTech": [
-  //   "https://taltech.ee/rohepoore/kliimanutikas-ulikool/rohelised-teemakuud",
-  //   "assets/taltech2035.png",
-  //   "--taltech-color",
-  // ],
+  "TalTech": [
+    "https://taltech.ee/infotehnoloogia-teaduskond",
+    "assets/taltech.png",
+    "--taltech-color",
+  ],
+  "Balsnack": [
+    "https://balsnack.ee/",
+    "assets/balsnack-logo.svg",
+    "--balsnack-color",
+  ],
+  "K-space": [
+    "https://k-space.ee",
+    "assets/kspace-logo2.svg",
+    "--kspace-color",
+  ],
   // "Tallinna Tehnikaülikooli Robotiklubi": [
   //   "https://robotiklubi.ee",
   //   "assets/Robotiklubi-logo.png",
@@ -31,11 +41,8 @@ const orgs = {
   //   "assets/taltechye.png",
   //   "--taltech-color",
   // ],
-  // "K-space": [
-  //   "https://k-space.ee",
-  //   "assets/kspace-logo2.svg",
-  //   "--kspace-color",
-  // ],
+
+
 };
 
 export const Hero = () => (
@@ -84,7 +91,7 @@ export const Hero = () => (
             </p> */}
             <Calendar className="not-sm:size-3 -translate-y-0.25"/>
             <p className="font-bold text-white not-sm:text-[9px] md:text-xs lg:text-2xl">
-              24. Okt 2026 <br/>(10:00 - 15:00)
+              24. Okt 2026 <br/>(11:00 - 15:00)
             </p>
           </div>
           <div className="flex items-center gap-1 lg:gap-2.5 ">
